@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.header {
+    height: 48px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    line-height: 100%;
+    /* margin-left: 60px; */
+    display: inline-block;
+}
+
+.nav>li {
+    display: inline-block;
+}
+
+.nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 100%;
+    font-size: 16px;
+    padding: 16px 24px;
+    margin-block: 0;
+}
+
+.nav>li:hover>a,
+.subnav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.subnav>li>a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #fff;
+    width: 140px;
+    padding: 12px;
+}
+
+.header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.header .search-btn {
+    float: right;
+}
+
+.header .menu-icon,
+.header .search-icon {
+    color: #fff;
+    font-size: 16px;
+    line-height: 48px;
+    padding: 0 24px;
+}
+
+.header .search-btn:hover {
+    background-color: salmon;
+}
+
+.header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+.mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+.slider {
+    margin-top: 48px;
+    padding-top: 40%;
+    background-image: url('https://images.unsplash.com/photo-1483101974978-cf266fdf1139?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slider .text-description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.content .content-section {
+    width: 100%;
+    padding: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .section-heading {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content .section-sub-heading {
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 16px;
+}
+
+.content .section-text {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content .members-list {
+    margin-top: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content .member-item {
+    float: left;
+    width: calc(100%/3);
+}
+
+.content .member-name {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content .member-img {
+    width: 150px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    font-size: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    background-color: crimson;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.places-list {
+    overflow: hidden;
+    margin: 32px -10px 48px;
+}
+
+.place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 10px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background: #fff;
+    padding: 16px;
+}
+
+.place-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.place-time {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 16px;
+}
+
+.place-description {
+    line-height: 1.4;
+    margin: 16px 0;
+}
+
+.btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background: #ccc;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer .socials-list {
+    font-size: 24px;
+}
+
+.footer .socials-list a {
+    color: #444;
+    margin: 4px;
+}
+
+.footer .socials-list a:hover {
+    color: #757575;
+}
+
+.footer .copyright {
+    color: #444;
+    padding-top: 16px;
+}
+
+.footer .copyright a {
+    color: #444;
+}

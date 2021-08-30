@@ -1,0 +1,64 @@
+/* ----- RESPONSIVE -----*/
+
+
+/* PC */
+
+@media (min-width: 1024px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1024px) {}
+
+
+/* Mobile */
+
+@media (max-width: 740px) {
+    .s-full-width,
+    .s-col-full {
+        width: 100%;
+    }
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .header .search-btn {
+        display: none;
+    }
+    .header .mobile-menu-btn {
+        display: block;
+    }
+    .nav {
+        display: block;
+    }
+    .nav>li {
+        display: block;
+        width: 100%;
+    }
+    .nav>li:first-child {
+        display: inline-block;
+    }
+    .nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    .nav .subnav a {
+        color: #000;
+    }
+    .members-list .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .members-list .member-item .member-img {
+        width: 80%;
+    }
+    .place-item {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .contact-form {
+        margin-top: 16px;
+    }
+}
